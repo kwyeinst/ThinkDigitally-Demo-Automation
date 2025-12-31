@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 
 function Company(){
-    test.only('About-us page', async ({ page }) => {
+    test('About-us page', async ({ page }) => {
         await page.goto('https://www.thinkdigitally.com/about-us/');
 
         await test.step('Accept cookie consent banner if visible', async () => {
