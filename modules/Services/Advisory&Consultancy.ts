@@ -13,6 +13,7 @@ function Advisor_Consultancy() {
         });
 
         await test.step('Check page banner and Icon', async () => {
+            await page.mouse.wheel(0, 200);
             await expect(page.locator('.et_pb_column_2_5 .et_pb_animation_top').first()).toBeVisible();
         });
 

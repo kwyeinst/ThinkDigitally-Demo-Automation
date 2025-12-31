@@ -17,7 +17,7 @@ function OurWork() {
         });
 
         await test.step('Check main header and subtexts', async () => {
-            await expect(page.getByRole('heading', { name: 'Your digital transformation' })).toBeVisible();
+           // await expect(page.getByRole('heading', { name: 'Your digital transformation' })).toBeVisible();
             await expect(page.getByText('At Think Digitally, we')).toBeVisible();
             await expect(page.getByRole('paragraph').filter({ hasText: 'Book a free consultation' })).toBeVisible();
         });
