@@ -44,8 +44,18 @@ npx playwright test
 
 This will run all the tests in the `tests/` directory.
 
-To see the test report, use the following command:
+### Test Report
+
+After running the tests, a detailed HTML report is generated. You can view the report using the following command:
 
 ```bash
 npx playwright show-report
 ```
+
+Here is a screenshot of the test report:
+
+![Test Report Screenshot](screenshots/Screenshot%202025-12-31%20143155.png)
+
+## CI/CD
+
+This project uses GitHub Actions for Continuous Integration and Continuous Deployment. The workflow is defined in the `.github/workflows/playwright.yml` file. The workflow runs the tests on every push and pull request to the `main` branch.
